@@ -1,0 +1,165 @@
+@import config
+@import "blocks/**/*"
+
+// Style
+.header
+	padding: 30px 0 20px
+
+.insta_profile
+	position: relative
+	border: 5px solid #fff
+	border-radius: 50%
+	overflow: hidden
+	width: 200px
+	height: 200px
+	margin: 0 0 5px 0
+	& > img
+		position: absolute
+		top: -55px
+		left: 0
+
+.header__slogan
+	padding-left: 15px
+	text-align: left
+	margin-bottom: 15px
+
+	.header__title
+		font-size: 32px
+		font-weight: bold
+		text-transform: uppercase
+		margin-bottom: 30px
+	.header__desc
+		margin-bottom: 30px
+		&	> h1
+			font-size: 26px
+			font-weight: bold
+		& strong
+			color: $accent
+
+.btn_wrap
+	width: 100%
+	max-width: 500px
+	.btn
+		color: $accent
+		font-size: 28px
+		border: 2px solid $accent
+		padding: 10px 25px
+
+.btn
+	display: block
+	padding: 14px 22px
+	margin: 0 auto
+	border-radius: 50px
+	border: 2px solid #1F1F1F
+	font-size: 22px
+	font-weight: 500
+	text-transform: uppercase
+	text-align: center
+	color: $textcolor
+	transition: all 0.5s ease
+	text-shadow: 3px 3px 7px #00000066
+	&:hover
+		text-shadow: 0px 0px 0px #00000066
+
+.section__title
+	font-size: 32px
+	font-weight: bold
+	text-transform: uppercase
+	color: $textcolor
+	margin: 60px auto 30px
+
+.faq_wrap
+	font-weight: bold
+	text-align: left
+
+.faq__title
+	color: $accent
+
+.faq__text
+	font-weight: normal
+	margin-bottom: 30px
+
+.portfolio
+	.btn_wrap
+		margin: 60px auto 0
+
+.portfolio_wrap
+	display: flex
+	flex-flow: row wrap
+	justify-content: space-evenly
+	margin: 0 -10px
+
+	.portfolio__item
+		display: flex
+		flex: 1 1 50%
+		min-width: 200px
+		padding: 0 10px
+		margin-bottom: 20px
+		color: $textcolor
+
+		.portfolio_work
+			display: flex
+			flex-direction: column
+			color: #000
+			font-size: 18px
+			line-height: $lineheight
+			background-color: #fff
+			border-radius: 20px
+			padding-bottom: 15px
+			overflow: hidden
+
+			.img-wrap
+				flex: 1 1 auto
+				overflow: hidden
+				height: 300px
+
+			.portfolio_work__info
+				padding: 25px 0 0 0
+
+				.prortfolio_work__instagram-link
+					font-weight: bold
+
+.swiper-container
+	width: 100%
+	height: 100%
+
+.swiper-slide
+	text-align: center
+	font-size: 18px
+	display: flex
+	justify-content: center
+	align-items: center
+
+.reviews__body 
+	display: flex
+	flex-flow: column nowrap
+	justify-content: center
+	align-items: center
+	padding: 0 40px
+
+	.reviews__ava
+		width: 150px
+		height: 150px
+
+		& > img
+			top: 0
+			left: 0
+			right: 0
+
+	.reviews__link
+		font-size: 14px
+		font-weight: bold
+		padding: 15px 0
+
+	
+
+.footer
+	padding: 25px
+
+.copyright
+	font-size: 14px
+	font-weight: bold
+	margin: 25px auto
+	> span
+		font-size: 12px
+		font-weight: normal
