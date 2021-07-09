@@ -10,14 +10,15 @@ document.addEventListener('DOMContentLoaded', () => {
 	
 	const swiper = new Swiper(".mySwiper", {
 		centeredSlides: true,
+		autoHeight: true,
 		autoplay: {
 			delay: 10000,
 			disableOnInteraction: false,
 		},
-		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
-		}
+		pagination: {
+			el: ".swiper-pagination",
+			dynamicBullets: true,
+		},
 	})
 
 })
